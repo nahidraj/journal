@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="fontawsome/css/all.min.css">
   <link rel="stylesheet" href="fontawsome/css/fontawesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -68,13 +69,13 @@
               </div>
             </div>
             <ul class="main_menu list-unstyled">
-              <li class="active">
+              <li>
                 <a href="index.html">
                   <i class="fas fa-home"></i>
                   <h5>Dashboard</h5>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="profile.html">
                   <i class="far fa-user-circle"></i>
                   <h5>Profile</h5>
@@ -118,118 +119,43 @@
         <div class="col-lg-8 col-xl-9">
           <div class="right_info">
             <div class="dashboard_info">
-              <div class="top_short_info">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="short_info_item">
-                      <div class="media">
-                        <div class="icon-wrap bg-warning"><i class="far fa-folder-open"></i></div>
-                        <div class="count-detail">
-                          <h3><span class="counter mr-5">500</span></h3>
-                          <p>Total Submission</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="short_info_item">
-                      <div class="media">
-                        <div class="icon-wrap bg-success"><i class="fas fa-wallet"></i></div>
-                        <div class="count-detail">
-                          <h3><span class="counter mr-5">20</span></h3>
-                          <p>Total Published</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="short_info_item">
-                      <div class="media">
-                        <div class="icon-wrap bg-info"><i class="far fa-times-circle"></i></div>
-                        <div class="count-detail">
-                          <h3><span class="counter mr-5">10</span></h3>
-                          <p>Total Rejected</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="common_block">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h4 class="common__title">Profile Details</h4>
+                  <a href="edit-profile.html" class="edit_profile">Edit Profile</a>
                 </div>
-              </div>
-              <div class="common_block table-responsive">
-                <h4 class="common__title">Recent Submission</h4>
                 <table class="table table-bordered table-striped mb-0">
-                  <thead class="table-dark">
-                    <tr>
-                      <th>Sl</th>
-                      <th>Title</th>
-                      <th>Current Status</th>
-                      <th>Submission Date</th>
-                    </tr>
-                  </thead>
                   <tbody>
                     <tr>
-                      <td>01</td>
-                      <td>Now you can have the philosophy</td>
-                      <td><span class="badge bg-danger">Pending</span></td>
-                      <td>May 24, 2022</td>
+                      <th>Given Name</th>
+                      <td>Nahid Raj</td>
                     </tr>
                     <tr>
-                      <td>01</td>
-                      <td>Now you can have the philosophy</td>
-                      <td><span class="badge bg-success">Complete</span></td>
-                      <td>May 24, 2022</td>
+                      <th>Family Name</th>
+                      <td>Nahid Raj</td>
                     </tr>
                     <tr>
-                      <td>01</td>
-                      <td>Now you can have the philosophy</td>
-                      <td><span class="badge bg-danger">Pending</span></td>
-                      <td>May 24, 2022</td>
+                      <th>Affiliation Name</th>
+                      <td>Nahid Raj</td>
                     </tr>
                     <tr>
-                      <td>01</td>
-                      <td>Now you can have the philosophy</td>
-                      <td><span class="badge bg-success">Complete</span></td>
-                      <td>May 24, 2022</td>
+                      <th>Country</th>
+                      <td>Banglades</td>
                     </tr>
                     <tr>
-                      <td>01</td>
-                      <td>Now you can have the philosophy</td>
-                      <td><span class="badge bg-danger">Pending</span></td>
-                      <td>May 24, 2022</td>
+                      <th>Mobile Number</th>
+                      <td>01740008005</td>
                     </tr>
                     <tr>
-                      <td>01</td>
-                      <td>Now you can have the philosophy</td>
-                      <td><span class="badge bg-success">Complete</span></td>
-                      <td>May 24, 2022</td>
+                      <th>Address</th>
+                      <td>Phulpur, Mymensingh</td>
+                    </tr>
+                    <tr>
+                      <th>Gender</th>
+                      <td>Male</td>
                     </tr>
                   </tbody>
                 </table>
-              </div>
-              <div class="common_block table-responsive">
-                <h4 class="common__title">Download Forms</h4>
-                <div class="row mt-2">
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <h5 class="sub__header">Initial Submission:</h5>
-                      <ul class="downloaded_files list-unstyled">
-                        <li><a href="">Manuscript Template</a></li>
-                        <li><a href="">Attestation on...</a></li>
-                        <li><a href="">Author Personal...</a></li>
-                        <li><a href="">Prospective Reviewers...</a></li>
-                      </ul>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <h5 class="sub__header">After Acceptance:</h5>
-                      <ul class="downloaded_files list-unstyled">
-                        <li><a href="">Response to...</a></li>
-                        <li><a href="">Author Personal...</a></li>
-                      </ul>
-                    </fieldset>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

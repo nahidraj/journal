@@ -1,0 +1,15 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.edit_profile {
+  background-color: $primary;
+  color: $white;
+  @include font(15px, 600);
+  border-radius: 4px;
+  padding: 6px 16px;
+  transition: all linear .2s;
+
+  &:hover {
+    background-color: $black;
+  }
+}

@@ -166,8 +166,8 @@ header .container-fluid .right_information .prf img {
 }
 
 main {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #F3F5FA;
 }
 main .left_sidebar .profile_widget {
@@ -698,6 +698,159 @@ footer p a {
   font-weight: 600;
 }
 .registration_page .right_side .submit_btn:hover {
+  background-color: #0A0F26;
+}
+
+.edit_profile {
+  background-color: #00ADEF;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 6px 16px;
+  transition: all linear 0.2s;
+}
+.edit_profile:hover {
+  background-color: #0A0F26;
+}
+
+.edit-profile {
+  margin-top: 10px;
+}
+.edit-profile fieldset {
+  border: 1px solid #00ADEF;
+  padding: 30px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+.edit-profile fieldset .title {
+  display: inline-block;
+  position: absolute;
+  top: -16px;
+  background-color: #00ADEF;
+  padding: 3px 14px 5px;
+  left: 14px;
+  border-radius: 4px;
+}
+.edit-profile fieldset .title h5 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+}
+.edit-profile fieldset .input-groups input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 0 12px;
+}
+.edit-profile fieldset .input-groups input:focus {
+  border-color: #00ADEF;
+}
+.edit-profile fieldset .input-groups input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+.edit-profile fieldset + fieldset {
+  margin-top: 30px;
+}
+.edit-profile .profile_image_upload .image-box {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.edit-profile .profile_image_upload .image-box img {
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.edit-profile .profile_image_upload .image-box .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: all linear 0.2s;
+  opacity: 0;
+}
+.edit-profile .profile_image_upload .image-box .overlay .close {
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+.edit-profile .profile_image_upload .image-box:hover .overlay {
+  opacity: 1;
+}
+.edit-profile .profile_image_upload .upload-box {
+  margin-left: 24px;
+  flex-grow: 1;
+}
+.edit-profile .profile_image_upload .upload-box label {
+  border: 1px solid #00ADEF;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #53627d;
+  text-align: center;
+  height: 45px;
+  border-radius: 3px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+.edit-profile .profile_image_upload .upload-box label i {
+  font-size: 18px;
+  line-height: 1;
+  margin-right: 10px;
+}
+.edit-profile span {
+  display: block;
+}
+.edit-profile .select2-container .select2-selection--single {
+  height: 45px;
+  width: 100%;
+}
+.edit-profile .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.edit-profile .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 45px;
+  right: 4px;
+}
+.edit-profile .select2.select2-container {
+  width: 100% !important;
+}
+.edit-profile .form-check-label {
+  cursor: pointer;
+}
+.edit-profile .form-check-input {
+  border-color: #0A0F26 !important;
+}
+.edit-profile .form-check-input:checked {
+  background-color: #00ADEF;
+  border-color: #00ADEF !important;
+}
+.edit-profile .submit_btn {
+  background-color: #00ADEF;
+  border-radius: 4px;
+  padding: 12px 30px;
+  text-align: center;
+  min-width: 320px;
+  border: 0;
+  color: #ffffff;
+  margin-top: 30px;
+  transition: all linear 0.2s;
+  font-size: 18px;
+  font-weight: 600;
+}
+.edit-profile .submit_btn:hover {
   background-color: #0A0F26;
 }
 
