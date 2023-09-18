@@ -9,7 +9,8 @@
   .login_box {
     background: $white;
     border-radius: 10px;
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
     height: 600px;
     box-shadow: 0 15px 50px rgb(0, 0, 0, 0.1);
     overflow: hidden;
@@ -89,7 +90,8 @@
           @include font(14px, 600);
         }
       }
-      button{
+
+      button {
         position: absolute;
         top: 12px;
         right: 20px;
@@ -104,7 +106,7 @@
       min-width: 100px;
       border-radius: 20px;
       color: $white;
-      margin: 5px 20px 20px;
+      margin: 5px 20px 0;
       outline: none;
       @include font(14px, 600);
       background-image: linear-gradient(rgb(196, 151, 255), rgb(93, 68, 255));
@@ -113,125 +115,13 @@
     .forgot_password {
       color: $primary;
       @include font(14px, 600);
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+    }
+
+    .mobile_signup {
+      color: $secondary;
+      @include font(14px, 600);
+      margin-bottom: 18px;
     }
   }
-
-
-
-
-  // .container {
-  //   position: relative;
-  //   padding: 40px 20px;
-  //   background: $white;
-  //   border-radius: 10px;
-  //   width: 700px;
-  //   min-height: 600px;
-  //   box-shadow: 0 15px 50px rgb(0, 0, 0, 0.1);
-  //   overflow: hidden;
-  // }
-
-  // .form-container {
-  //   height: 100%;
-  //   width: 50%;
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   right: 0;
-  // }
-
-  // .form-container input {
-  //   display: block;
-  //   padding: 12px 20px;
-  //   margin: 7px 13px;
-  //   background: #eee;
-  //   color: $black;
-  //   border: none;
-  //   outline: none;
-  //   border-radius: 35px;
-  //   width: 80%;
-  // }
-
-  // .form-sign-in,
-  // .form-sign-up {
-  //   position: absolute;
-  //   height: 100%;
-  //   width: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   flex-direction: column;
-  // }
-
-
-  // .form-container h1 {
-  //   text-align: center;
-  //   @include font(25px, 600);
-  //   margin: 10px;
-  // }
-
-  // .form-container a {
-  //   margin-left: 30px;
-  //   text-align: center;
-  //   font-size: 12px;
-  //   color: var(--anchor-tag);
-  //   text-decoration: none;
-  // }
-
-  // .signup_btn {
-  //   padding: 7px 10px 12px 10px;
-  //   min-width: 120px;
-  //   @include font(17px, 600);
-  //   border-radius: 40px;
-  //   color: white;
-  //   outline: none;
-  //   margin-top: 20px;
-  //   cursor: pointer;
-  //   border: 1px solid $white;
-  //   background-image: linear-gradient(rgb(196, 151, 255), rgb(93, 68, 255));
-  //   text-align: center;
-  // }
-
-  // .btn-form {
-  //   border: none;
-  //   background-image: linear-gradient(rgb(196, 151, 255), rgb(93, 68, 255));
-  // }
-
-  // .overlay {
-  //   position: absolute;
-  //   height: 100%;
-  //   width: 50%;
-  //   background: var(--button-color);
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   left: 0;
-  // }
-
-  // .overlay h1 {
-  //   text-align: center;
-  //   text-transform: uppercase;
-  //   color: $white;
-  //   @include font(25px, 600);
-  // }
-
-  // .overlay span {
-  //   color: white;
-  //   text-align: center;
-  //   font-size: 16px;
-  //   padding: 10px;
-  // }
-
-  // .overlay-panel {
-  //   position: absolute;
-  //   height: 100%;
-  //   width: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   padding: 30px;
-  //   top: 0;
-  //   transition: 0.8s;
-  //   background-image: linear-gradient(rgb(196, 151, 255), rgb(93, 68, 255));
-  // }
 }
