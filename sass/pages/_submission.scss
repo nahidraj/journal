@@ -107,7 +107,7 @@
 
 .uploaded__pdf__file {
   padding: 10px 20px;
-  background: #F7F8FC;
+  background: #ebe6d7;
   border: 1px solid #EAEAEA;
   border-radius: 10px;
   display: flex;
@@ -129,40 +129,6 @@
       cursor: pointer;
       color: $secondary;
     }
-  }
-}
-
-.form-check {
-  .form-check-input {
-    border-color: $black;
-
-    &:checked {
-      background-color: $primary;
-      border-color: $primary;
-    }
-  }
-
-  .form-check-label {
-    cursor: pointer;
-  }
-}
-
-.board__comments {
-  .appreved__btn {
-    background-color: green;
-    padding: 9px 30px;
-    @include font(17px, 600);
-    color: $white;
-    border-radius: 4px;
-  }
-
-  .reject__btn {
-    background-color: red;
-    padding: 9px 30px;
-    @include font(17px, 600);
-    color: $white;
-    border-radius: 4px;
-    margin-left: 10px;
   }
 }
 
@@ -191,6 +157,13 @@
         .media-body {
           flex: 1;
 
+          span {
+            @include font(12px, 400);
+            position: relative;
+            top: -5px;
+            font-style: italic;
+          }
+
           p {
             background-color: $primary;
             color: $white;
@@ -211,7 +184,8 @@
               border-radius: 1px;
               transform: rotate(45deg);
             }
-            small{
+
+            small {
               @include font(12px, 500);
               line-height: 14px;
             }
@@ -239,8 +213,11 @@
         .media-body {
           flex: 1;
 
-          span{
-            @include font(14px, 500);
+          span {
+            @include font(12px, 400);
+            position: relative;
+            top: -5px;
+            font-style: italic;
           }
 
           p {
@@ -263,7 +240,8 @@
               border-radius: 1px;
               transform: rotate(45deg);
             }
-            small{
+
+            small {
               @include font(12px, 500);
               line-height: 14px;
             }
@@ -345,7 +323,6 @@
     img {
       width: 45px;
       height: 45px;
-      border-radius: 50%;
     }
   }
 }

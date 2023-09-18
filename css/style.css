@@ -1011,7 +1011,7 @@ footer p a {
 
 .uploaded__pdf__file {
   padding: 10px 20px;
-  background: #F7F8FC;
+  background: #ebe6d7;
   border: 1px solid #EAEAEA;
   border-radius: 10px;
   display: flex;
@@ -1028,35 +1028,6 @@ footer p a {
 .uploaded__pdf__file .delete i {
   cursor: pointer;
   color: #EF4444;
-}
-
-.form-check .form-check-input {
-  border-color: #0A0F26;
-}
-.form-check .form-check-input:checked {
-  background-color: #00ADEF;
-  border-color: #00ADEF;
-}
-.form-check .form-check-label {
-  cursor: pointer;
-}
-
-.board__comments .appreved__btn {
-  background-color: green;
-  padding: 9px 30px;
-  font-size: 17px;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 4px;
-}
-.board__comments .reject__btn {
-  background-color: red;
-  padding: 9px 30px;
-  font-size: 17px;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 4px;
-  margin-left: 10px;
 }
 
 .conversation__panel {
@@ -1082,6 +1053,13 @@ footer p a {
 }
 .conversation__panel .simplebar__content .user-msgbox .media .media-body {
   flex: 1;
+}
+.conversation__panel .simplebar__content .user-msgbox .media .media-body span {
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  top: -5px;
+  font-style: italic;
 }
 .conversation__panel .simplebar__content .user-msgbox .media .media-body p {
   background-color: #00ADEF;
@@ -1127,8 +1105,11 @@ footer p a {
   flex: 1;
 }
 .conversation__panel .simplebar__content .admin-msgbox .media .media-body span {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  top: -5px;
+  font-style: italic;
 }
 .conversation__panel .simplebar__content .admin-msgbox .media .media-body p {
   background-color: #00ADEF;
@@ -1216,7 +1197,6 @@ footer p a {
 .attachment__panel .uploaded__file img {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
