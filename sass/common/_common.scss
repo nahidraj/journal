@@ -59,7 +59,12 @@ body {
   @include font(16px, 400);
   color: $black;
   font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $body;
 }
+
 
 ::selection {
   background-color: $primary;

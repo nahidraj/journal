@@ -58,6 +58,10 @@ body {
   font-weight: 400;
   color: #0A0F26;
   font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F5FA;
 }
 
 ::selection {
@@ -168,7 +172,6 @@ header .container-fluid .right_information .prf img {
 main {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #F3F5FA;
 }
 main .left_sidebar .profile_widget {
   background-color: #ffffff;
@@ -400,6 +403,7 @@ main fieldset .sub__header {
 footer {
   background-color: #0A0F26;
   padding: 20px 0;
+  margin-top: auto;
 }
 footer p {
   color: #ffffff;
@@ -701,19 +705,6 @@ footer p a {
   background-color: #0A0F26;
 }
 
-.edit_profile {
-  background-color: #00ADEF;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 4px;
-  padding: 6px 16px;
-  transition: all linear 0.2s;
-}
-.edit_profile:hover {
-  background-color: #0A0F26;
-}
-
 .edit-profile {
   margin-top: 10px;
 }
@@ -852,6 +843,188 @@ footer p a {
 }
 .edit-profile .submit_btn:hover {
   background-color: #0A0F26;
+}
+
+.input__groups label {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.input__groups input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 0 12px;
+}
+.input__groups i {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.input__groups .password__field {
+  padding-right: 50px;
+}
+
+.notification__list {
+  position: relative;
+  padding: 10px 0;
+}
+.notification__list::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+  content: "";
+  border-radius: 10px;
+}
+.notification__list li {
+  padding: 8px 0;
+  padding-left: 30px;
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  color: #0A0F26;
+  transition: all linear 0.2s;
+}
+.notification__list li small {
+  font-size: 13px;
+  font-weight: 500;
+  color: red;
+}
+.notification__list li::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #0A0F26;
+  content: "";
+  transition: all linear 0.2s;
+}
+
+.submission__file {
+  background-color: #EF4444;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 3px;
+}
+
+.view__submission {
+  background-color: #00ADEF;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.common__btn__ {
+  background-color: #00ADEF;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 6px 16px;
+  transition: all linear 0.2s;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.common__btn__:hover {
+  background-color: #0A0F26;
+}
+
+.input__groups label {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.input__groups input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 0 12px;
+}
+.input__groups input:focus {
+  border-color: #00ADEF;
+}
+.input__groups textarea {
+  width: 100%;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 12px;
+}
+.input__groups textarea:focus {
+  border-color: #00ADEF;
+}
+
+.submit__submission {
+  background-color: #EF4444;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 24px;
+  transition: all linear 0.2s;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  border: 0;
+}
+
+.document__submission__pdf label {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.document__submission__pdf .document__submission__widget {
+  background-color: #F7F8FC;
+  border: 2px dashed #e0e0e0;
+  border-radius: 3px;
+  padding: 30px;
+}
+.document__submission__pdf .document__submission__widget h6 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.document__submission__pdf .document__submission__widget label {
+  color: #00ADEF;
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.uploaded__pdf__file {
+  padding: 10px 20px;
+  background: #F7F8FC;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.uploaded__pdf__file .text h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+.uploaded__pdf__file .text small {
+  color: #EF4444;
+  font-size: 14px;
+}
+.uploaded__pdf__file .delete i {
+  cursor: pointer;
+  color: #EF4444;
 }
 
 /*# sourceMappingURL=style.css.map */
