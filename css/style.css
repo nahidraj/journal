@@ -324,7 +324,7 @@ main .right_info .dashboard_info .common_block {
   margin-bottom: 24px;
 }
 main fieldset {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #b8b8b8;
   padding: 24px;
   position: relative;
   border-radius: 10px;
@@ -336,6 +336,9 @@ main fieldset .sub__header {
   position: absolute;
   top: -16px;
   left: 16px;
+}
+main td {
+  vertical-align: middle;
 }
 
 .common__title {
@@ -1025,6 +1028,195 @@ footer p a {
 .uploaded__pdf__file .delete i {
   cursor: pointer;
   color: #EF4444;
+}
+
+.form-check .form-check-input {
+  border-color: #0A0F26;
+}
+.form-check .form-check-input:checked {
+  background-color: #00ADEF;
+  border-color: #00ADEF;
+}
+.form-check .form-check-label {
+  cursor: pointer;
+}
+
+.board__comments .appreved__btn {
+  background-color: green;
+  padding: 9px 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.board__comments .reject__btn {
+  background-color: red;
+  padding: 9px 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.conversation__panel {
+  background-color: #F5F8FA;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+.conversation__panel .simplebar__content {
+  padding: 15px;
+  overflow-y: auto;
+  height: 400px;
+}
+.conversation__panel .simplebar__content li + li {
+  margin-top: 14px;
+}
+.conversation__panel .simplebar__content .user-msgbox {
+  max-width: 70%;
+  width: fit-content;
+}
+.conversation__panel .simplebar__content .user-msgbox .media {
+  display: flex;
+  align-items: flex-start;
+}
+.conversation__panel .simplebar__content .user-msgbox .media .media-body {
+  flex: 1;
+}
+.conversation__panel .simplebar__content .user-msgbox .media .media-body p {
+  background-color: #00ADEF;
+  color: #ffffff;
+  padding: 3px 20px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  position: relative;
+}
+.conversation__panel .simplebar__content .user-msgbox .media .media-body p::before {
+  position: absolute;
+  top: 6px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #00ADEF;
+  content: "";
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+.conversation__panel .simplebar__content .user-msgbox .media .media-body p small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.conversation__panel .simplebar__content .user-msgbox .media img {
+  margin-inline-end: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.conversation__panel .simplebar__content .admin-msgbox {
+  margin-inline-start: auto;
+  max-width: 70%;
+  width: fit-content;
+}
+.conversation__panel .simplebar__content .admin-msgbox .media {
+  display: flex;
+  align-items: flex-start;
+}
+.conversation__panel .simplebar__content .admin-msgbox .media .media-body {
+  flex: 1;
+}
+.conversation__panel .simplebar__content .admin-msgbox .media .media-body span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.conversation__panel .simplebar__content .admin-msgbox .media .media-body p {
+  background-color: #00ADEF;
+  color: #ffffff;
+  padding: 3px 20px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  position: relative;
+}
+.conversation__panel .simplebar__content .admin-msgbox .media .media-body p::before {
+  position: absolute;
+  top: 6px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #00ADEF;
+  content: "";
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+.conversation__panel .simplebar__content .admin-msgbox .media .media-body p small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.conversation__panel .simplebar__content .admin-msgbox .media img {
+  margin-inline-start: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.attachment__panel {
+  width: 100%;
+  padding: 4px 15px;
+  background-color: #F5F8FA;
+  margin-top: 24px;
+  border-radius: 5px;
+  border: 1px solid #0A0F26;
+}
+.attachment__panel .input_groups {
+  flex-grow: 1;
+}
+.attachment__panel .input_groups input {
+  width: 100%;
+  height: 52px;
+  background-color: transparent;
+  border: 0;
+}
+.attachment__panel .option {
+  padding-left: 70px;
+}
+.attachment__panel .option .file label {
+  background-color: #0A0F26;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+}
+.attachment__panel .option .sent button {
+  background-color: #00ADEF;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  border: 0;
+  margin-left: 10px;
+}
+.attachment__panel .uploaded__file {
+  margin-right: 24px;
+  position: relative;
+}
+.attachment__panel .uploaded__file i {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+  color: #EF4444;
+}
+.attachment__panel .uploaded__file img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

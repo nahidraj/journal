@@ -200,7 +200,7 @@ main {
   }
 
   fieldset {
-    border: 1px solid #c4c4c4;
+    border: 1px solid #b8b8b8;
     padding: 24px;
     position: relative;
     border-radius: 10px;
@@ -213,6 +213,9 @@ main {
       top: -16px;
       left: 16px
     }
+  }
+  td{
+    vertical-align: middle
   }
 }
 
