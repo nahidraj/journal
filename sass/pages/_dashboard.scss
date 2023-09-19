@@ -58,6 +58,14 @@ main {
           color: rgba(0, 0, 0, 0.9);
         }
       }
+
+      .mobile_sidebar_close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 18px;
+      }
     }
 
     .main_menu {
@@ -80,7 +88,6 @@ main {
           }
 
           h5 {
-            width: 200px;
             @include font(18px, 500);
           }
 
@@ -214,7 +221,11 @@ main {
       left: 16px
     }
   }
-  td{
+
+  td {
+    vertical-align: middle
+  }
+  th{
     vertical-align: middle
   }
 }

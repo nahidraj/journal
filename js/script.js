@@ -15,6 +15,24 @@ $(function () {
     closeOnSelect: true
   });
 
+  // mobile sidebar js
+
+  let mobile_sidebar_close = document.querySelector(".mobile_sidebar_close");
+  let mobile_menu = document.querySelector(".mobile_menu");
+  let left_sidebar = document.querySelector(".left_sidebar");
+
+  if (mobile_menu) {
+    mobile_menu.addEventListener("click", () => {
+      left_sidebar.classList.add("show_mobile_sidebar");
+    })
+  }
+
+  if (mobile_sidebar_close) {
+    mobile_sidebar_close.addEventListener("click", () => {
+      left_sidebar.classList.remove("show_mobile_sidebar");
+    })
+  }
+
 
   // back to top js
   var btn = $("#button");
@@ -69,5 +87,6 @@ $(function () {
   //   $(this).parent(".sub-menu").children("ul").slideToggle("100");
   //   $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
   // });
-  
+
 });
+
